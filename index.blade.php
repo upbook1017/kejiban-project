@@ -16,6 +16,13 @@
   </header>
   <main>
     <h1>掲示板一覧</h1>
+    <nav>
+        <ul>
+          <li><a href="sakusei.blade.php">新規話題を作成</a></li>
+        </ul>
+    </nav>
+    <input type="text" name="wadai" value="">
+    <input type="submit" value="検索">
     <p>{{$msg}}</p>
   </main>
   <footer>
