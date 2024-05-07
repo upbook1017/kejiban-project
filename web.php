@@ -13,3 +13,4 @@ Route::get('/', function () {
 
 Route::get('home', 'App\Http\Controllers\HomeController@index');
 Route::get('sakusei', 'App\Http\Controllers\SakuseiController@index');
+Route::get('wadai', 'App\Http\Controllers\WadaiController@index');
