@@ -1,19 +1,21 @@
 @extends('layouts.kejiban')
 
 <style>
-    ul#wadai1 {margin: 15px auto 0px;}
+    ul#wadai1 {margin: 15px auto 15px;}
+    .scroll {width: 700px; height: 240px; overflow: auto; border: 1px solid #6E6E6E;
+        display: block; margin-left: auto; margin-right: auto; margin-bottom: 5px;}
     table#wadai1 {padding: 0px 0px; margin: 0px 0px 0px 212px; border:#FFFFFF;}
     table#wadai1 tr .error1 {background-color: #FFFFFF; color: #FF0000;}
     table#wadai1 tr .myname1 {text-align: left;}
     table#wadai1 tr td {background-color: #FFFFFF;}
-    table#wadai2 {overflow: scroll; padding: 0px 0px; margin: 0px 0px 0px 212px; border:#FFFFFF;}/*スクロールの表記に修正すること。*/
+    table#wadai2 {padding: 0px 0px; margin: 0px 0px 0px 212px; border:#FFFFFF;}
     table#wadai2 tr .wadaimei1 {text-align: left;}
     table#wadai2 tr td {background-color: #FFFFFF;}
     table#wadai2 td .wadaimei2 {width: 250px;}
     .error3 {margin-top: 5px; margin-bottom: 5px; margin-left: 215px; color: #FF0000;}
-    textarea {display: block; width: 860px ; height: 200px; margin-left: auto;
+    textarea {display: block; width: 860px ; height: 100px; margin-left: auto;
     margin-right: auto; margin-top: 0px; margin-bottom: 0px; font-size: 16px;}
-    .toukou {margin-left: 1028px; margin-top: 5px; margin-bottom: 112px;}
+    .toukou {margin-left: 1028px; margin-top: 5px; margin-bottom: 20px;}
 </style>
 
 @section('main')
@@ -25,6 +27,7 @@
         </ul>
     </nav>
 
+<div class="scroll">
 <table id="wadai2">
   <tr>
     <th class="wadaimei1">話題名：</th>
@@ -34,6 +37,7 @@
       </td>
   </tr>
 </table>
+</div>
 
 <table id="wadai1">
 @csrf
